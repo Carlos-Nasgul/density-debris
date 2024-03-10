@@ -1,14 +1,15 @@
 ---
-
+const { title, description } = Astro.props;
 ---
 
 <article>
     <img
         src="https://media.istockphoto.com/id/887589110/es/foto/tel%C3%A9fono-de-la-mano-del-empresario-con-el-concepto-de-red-social.jpg?s=1024x1024&w=is&k=20&c=wH_sYxlwtRWWT7Zs93WysW3RinoqMgeh6eDMmxI56Wg="
         alt="Astro images testing"
+        class="rounded"
     />
-    <h2>Mi artículo del Post</h2>
-    <p>Aquí un párrafo descriptivo</p>
+    <h2 class="text-center pt-4"><em>Mi artículo del Post</em></h2>
+    <p class="pt-5">Aquí un párrafo descriptivo</p>
     <p>
         Contenido artículo Lorem ipsum dolor sit amet consectetur, adipisicing
         elit. Nostrum quibusdam dolorum amet assumenda, quisquam ad debitis
