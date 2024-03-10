@@ -6,7 +6,12 @@ import Post from "../components/Post.astro";
 <Layout title="Acerca de Astro">
     <article class="text-white bg-gray-800 max-w-sm px-5 py-8">
         <h1 class="text-center pb-5">Artículo de calidad</h1>
-        <Post />
+        <Post
+            post={{
+                title: "My super ASTRO OHU",
+                description: "My mic mic",
+            }}
+        />
         <Post />
         <Post />
     </article>
