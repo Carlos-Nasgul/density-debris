@@ -1,20 +1,25 @@
 ---
-const { title, description } = Astro.props;
+interface Props {
+    content: string;
+    title: string;
+    description: string;
+}
+
+const { title, description, content } = Astro.props;
 ---
 
 <article class="text-white bg-gray-800 max-w-sm px-5 py-8">
-    <h1 class="text-center pb-5">Artículos de calidad</h1>
+    <h1 class="text-center pb-5 text-blue-500">Diario de Cazalla</h1>
     <img
         src="https://media.istockphoto.com/id/887589110/es/foto/tel%C3%A9fono-de-la-mano-del-empresario-con-el-concepto-de-red-social.jpg?s=1024x1024&w=is&k=20&c=wH_sYxlwtRWWT7Zs93WysW3RinoqMgeh6eDMmxI56Wg="
         alt="Astro images testing"
         class="rounded"
     />
     <h2 class="text-center pt-4"><em>{title}</em></h2>
-    <p class="pt-5 pl-5">{description}</p>
-    <p class="text-zinc-300">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam autem
-        sequi unde? Fuga tempora exercitationem necessitatibus! Veritatis
-        similique sit amet. Cupiditate nemo placeat quam eaque harum voluptatum
-        expedita ea dolores.
+    <p class="text-center pt-5 pl-5">{description}</p>
+    <p class="text-yellow-300 text-center">
+        {content}
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor corporis
+        repellendus quod impedit deserunt dignissimos neque.
     </p>
 </article>
